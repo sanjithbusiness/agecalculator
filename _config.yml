@@ -27,4 +27,4 @@ github_pages:
     - jekyll-remote-theme
 
 # Remote Theme
-remote_theme: jekyll/minimal
+remote_theme: https://github.com/jekyll/minimal
