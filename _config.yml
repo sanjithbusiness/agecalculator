@@ -1,11 +1,30 @@
 # Site settings
-title: Great New Blog Title
-author:
-  name: Evan Will
-  email: your-email@domain.com
-description: "Great site about Jekyll on GH-Pages."
+title: Your Site Title
+description: Your site description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sanjithbusiness.github.io/" # the base hostname & protocol for your site
 
 # Build settings
-remote_theme: jekyll/minimal
-
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# GitHub Pages settings
+github_pages:
+  gems:
+    - jekyll
+    - jekyll-github-metadata
+    - jekyll-remote-theme
+
+# Remote Theme
+remote_theme: jekyll/minimal
