@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <p>Enter your birth date and time:</p>
+    <input type="datetime-local" id="birthDateTime">
+    <h2>Today's date:</h2>   
+    <p id="datetime"></p>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <div id="ageDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+// Get current date and time
+var now = new Date();
+var datetime = now.toLocaleString();
+
+// Insert date and time into HTML
+document.getElementById("datetime").innerHTML = datetime;
+</script>
+</html>
